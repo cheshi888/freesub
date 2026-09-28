@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  server: 62.60.152.1
-  port: 56328
+- name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  server: 185.143.179.179
+  port: 25026
   udp: true
   type: vless
-  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  uuid: 441a29b2-d9aa-47d5-9209-0a9191479f9f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
-    short-id: f3a9c21e8b6d4571
-  servername: table.vkroom-it-service.xyz
+    public-key: RVh0D446O5pKnOqlNkJNxSGGbmzl8swn4YBXYce1HSw
+    short-id: 34c465417d7ebca0
+  servername: www.google.com
   client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
